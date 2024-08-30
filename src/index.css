@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgba(3, 11, 17, 1);
+}
+
+:root {
+  --rem: 0 !important;
+}
+body {
+  margin: 0px !important;
+}
+
+.landing-body {
+  background-color: rgba(3, 11, 17, 1);
+}
+
+.banner {
+  background-image: url('../public/images/banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+  width: 100%;
+}
+
+.navbar {
+  background: rgba(26, 34, 40, 0.6);
+  /* padding: 10px; */
+}
+
+.ant-input-outlined {
+  background: transparent;
+  border: 1px solid rgba(90, 255, 234, 0.4);
+}
+
+::placeholder {
+  color: rgba(90, 255, 234, 0.4) !important;
+}
+
+.primary {
+  background-color: rgba(57, 255, 251, 1);
+  box-shadow: rgba(90, 255, 234, 0.3);
+}
+
+.secondary {
+  background-color: rgba(3, 11, 17, 1);
+  border: 1.5px solid rgba(57, 255, 251, 1);
+  color: rgba(57, 255, 251, 1);
+}
+
+.box {
+  background-image: url('../public/images/igordoon-primus-sEHUqA0gGzE-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  width: 340px; 
+}
+
+.circle {
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.gradient-font {
+  background: linear-gradient(rgba(90, 255, 255, 1), rgba(0, 122, 122, 1));
+}
+
+.landing-box {
+  width: 338px;
+  height: 160px;
+}
+
+.banner-2 {
+  background-image: url('../public/images/Rectangle\ 15.png');
+  height: 1050px;
+}
+
+.landing-box {
+  background-color: rgba(90, 255, 255, 0.4);
+  height: 300px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.landing-banner {
+  background-image: url('../public/images/Frame\ 252.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  width: 275px;
+  margin: -360px 0 0 800px;
+  border-radius: 10px;
+}
+
+.pricing-block {
+  background-image: url('../public/images/pricing.png');
+}
