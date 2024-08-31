@@ -197,6 +197,9 @@ function App() {
               <div className='pt-1'>
                 <span className='text-white'>{t("footer_3")}</span>
               </div>
+              <div className='pt-1'>
+                <a className='text-white' href='https://techsaral4.wpcomstaging.com/courses/'>{t("footer_4")}</a>
+              </div>
             </div>
             <div className='w-4/12 '>
               <div>
