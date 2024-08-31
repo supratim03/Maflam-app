@@ -51,12 +51,37 @@ body {
 }
 
 .box {
-  background-image: url('../public/images/igordoon-primus-sEHUqA0gGzE-unsplash.jpg');
+  background-image: url('../public/images/card1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  width: 340px;
+}
+
+.box2 {
+  background-image: url('../public/images/card3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 350px;
   width: 340px; 
 }
+
+.box3 {
+  background-image: url('../public/images/card_3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  width: 340px; 
+}
+
+.box4 {
+  background-image: url('../public/images/card4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  width: 340px; 
+}
+
 
 .circle {
   border-radius: 50%;
@@ -75,11 +100,11 @@ body {
 }
 
 .banner-2 {
-  background-image: url('../public/images/Rectangle\ 15.png');
+  background-image: url('../public/images/Rectangle_15.png');
   height: 1050px;
 }
 
-.landing-box {
+.landing-box-floating {
   background-color: rgba(90, 255, 255, 0.4);
   height: 300px;
   border-radius: 10px;
@@ -87,15 +112,14 @@ body {
 }
 
 .landing-banner {
-  background-image: url('../public/images/Frame\ 252.png');
+  background-image: url('../public/images/Frame_252.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 450px;
   width: 275px;
-  margin: -360px 0 0 435px;
+  margin: -360px 0 0 675px;
   border-radius: 10px;
 }
-
 .pricing-block {
   background-image: url('../public/images/pricing.png');
 }

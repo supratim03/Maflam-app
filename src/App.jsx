@@ -4,9 +4,12 @@ import { useTranslation } from 'react-i18next'
 import { Button, Col, Row } from 'antd';
 import { ArrowLeftOutlined } from '@ant-design/icons';
 import pricing from '../public/images/pricing.png'
+import useLocalizeDocumentAttributes from './i18n/useLocalizeDocumentAttributes';
 
 function App() {
   const { t } = useTranslation();
+
+  useLocalizeDocumentAttributes();
 
   return (
     <div className='h-full landing-body'>
@@ -46,7 +49,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className='box'>
+            <div className='box2'>
               <div className='text-center mt-[220px]'>
                 <span className='text-white text-lg'><b>{t('landing-box-1')}</b></span>
                 <div className='pt-2.5 flex justify-center'>
@@ -56,7 +59,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className='box'>
+            <div className='box3'>
               <div className='text-center mt-[220px]'>
                 <span className='text-white text-lg'><b>{t('landing-box-1')}</b></span>
                 <div className='pt-2.5 flex justify-center'>
@@ -66,7 +69,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className='box'>
+            <div className='box4'>
               <div className='text-center mt-[220px]'>
                 <span className='text-white text-lg'><b>{t('landing-box-1')}</b></span>
                 <div className='pt-2.5 flex justify-center'>
@@ -78,7 +81,7 @@ function App() {
             </div>
           </div>
         </Col>
-        <Col xs={24} sm={24} md={24} lg={24}>
+        <Col xs={24} sm={24} md={24} lg={24} className='pt-8'>
           <div className='text-center pt-8'>
             <span className='text-white text-2xl'><b>{t("landing_stat_header")}</b></span>
           </div>
@@ -110,49 +113,49 @@ function App() {
           </div>
         </Col>
       </Row>
-      <Row className='pl-[250px] pr-[250px] pb-[150px] pt-[75px] banner-2'>
+      <Row className='pl-[250px] pr-[250px] pb-[150px] banner-2'>
         <Col xs={24} sm={24} md={24} lg={24} className='pt-8'>
           <div className='text-center'>
-            <span className='text-white text-4xl'>MFL will be revealed</span>
+            <span className='text-white text-4xl'>{t("landing_2")}</span>
           </div>
           <div className='pt-8 text-center pl-[200px] pr-[200px]'>
             <span className='text-white'>
-              We cooperate with more than 300 leading universities and companies. We cooperate with more than 300 leading universities and companies. We cooperate with more than 300 leading universities and companies. We cooperate with more than 300 leading universities and companies. We cooperate with more than 300 leading universities and companies. We cooperate with more than 300 leading universities and companies. We cooperate with more than 300 leading universities and companies.
+              {t("landing_2_subText")}
             </span>
           </div>
         </Col>
         <Col xs={24} sm={24} md={24} lg={24} className='pt-16'>
           <div className='flex gap-2'>
             <div className='w-4/12 text-center landing-box flex justify-center items-center' style={{ backgroundColor: 'rgba(59, 46, 138, 0.2)' }}>
-              <span className='text-white'>عملي</span>
+              <span className='text-white'>{t("smallCard_1")}</span>
             </div>
             <div className='w-4/12 text-center landing-box flex justify-center items-center' style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)' }}>
-              <span className='text-white'>عملي</span>
+              <span className='text-white'>{t("smallCard_2")}</span>
             </div>
             <div className='w-4/12 text-center landing-box flex justify-center items-center' style={{ backgroundColor: 'rgba(188, 229, 229, 0.2)' }}>
-              <span className='text-white'>عملي</span>
+              <span className='text-white'>{t("smallCard_3")}</span>
             </div>
             <div className='w-4/12 text-center landing-box flex justify-center items-center' style={{ backgroundColor: 'rgba(249, 245, 253, 0.2) ' }}>
-              <span className='text-white'>عملي</span>
+              <span className='text-white'>{t("smallCard_4")}</span>
             </div>
           </div>
         </Col>
         <Col xs={24} sm={24} md={24} lg={24} className='pt-[300px]'>
-          <Row className='landing-box'>
+          <Row className='landing-box-floating'>
             <Col xs={24} sm={24} md={24} lg={24}>
               <div className='p-8'>
                 <div>
                   <span className='text-white text-3xl'>
                     <b>
-                      Welcome to Film Studio
+                      {t("floatingCard")}
                     </b>
                   </span>
                 </div>
-                <div>
+                {/* <div>
                   <span className='text-white text-3xl'>
                     Learn Filmography
                   </span>
-                </div>
+                </div> */}
               </div>
             </Col>
           </Row>
@@ -174,48 +177,48 @@ function App() {
           <div className='flex'>
             <div className='w-4/12 '>
               <div>
-                <span className='text-white text-2xl'><b>Quick Links</b></span>
+                <span className='text-white text-2xl'><b>{t("footer_header")}</b></span>
               </div>
               <div className='pt-1'>
-                <span className='text-white'>Home</span>
+                <span className='text-white'>{t("footer_1")}</span>
               </div>
               <div className='pt-1'>
-                <span className='text-white'>Profile</span>
+                <span className='text-white'>{t("footer_2")}</span>
               </div>
               <div className='pt-1'>
-                <span className='text-white'>FAQ</span>
+                <span className='text-white'>{t("footer_3")}</span>
               </div>
               <div className='pt-1'>
-                <span className='text-white'>Home</span>
+                <span className='text-white'>{t("footer_1")}</span>
               </div>
               <div className='pt-1'>
-                <span className='text-white'>Profile</span>
+                <span className='text-white'>{t("footer_2")}</span>
               </div>
               <div className='pt-1'>
-                <span className='text-white'>FAQ</span>
+                <span className='text-white'>{t("footer_3")}</span>
               </div>
             </div>
             <div className='w-4/12 '>
               <div>
-                <span className='text-white text-2xl'><b>Quick Links</b></span>
+                <span className='text-white text-2xl'><b>{t("footer_header")}</b></span>
               </div>
               <div className='pt-1'>
-                <span className='text-white'>Home</span>
+                <span className='text-white'>{t("footer_1")}</span>
               </div>
               <div className='pt-1'>
-                <span className='text-white'>Profile</span>
+                <span className='text-white'>{t("footer_2")}</span>
               </div>
               <div className='pt-1'>
-                <span className='text-white'>FAQ</span>
+                <span className='text-white'>{t("footer_3")}</span>
               </div>
               <div className='pt-1'>
-                <span className='text-white'>Home</span>
+                <span className='text-white'>{t("footer_1")}</span>
               </div>
               <div className='pt-1'>
-                <span className='text-white'>Profile</span>
+                <span className='text-white'>{t("footer_2")}</span>
               </div>
               <div className='pt-1'>
-                <span className='text-white'>FAQ</span>
+                <span className='text-white'>{t("footer_3")}</span>
               </div>
             </div>
           </div>
